@@ -4,4 +4,10 @@
 
 {% block body %}
     <h1>Test</h1>
+
+    {{
+        render(controller(
+            'App\\Controller\\TagClaudController::tagClaud'
+        ))
+    }}
 {% endblock %}
