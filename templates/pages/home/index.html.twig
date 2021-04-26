@@ -4,7 +4,27 @@
 
 {% block body %}
     <h1>Test</h1>
-
+    <form>
+        <label>
+            Word
+            <input type="word">
+        </label>
+        <label>
+            Original language
+            <select type="original_language">
+                <option>EN</option>
+                <option>UA</option>
+            </select>
+        </label>
+        <label>
+            Target language
+            <select type="target_language">
+                <option>EN</option>
+                <option>UA</option>
+            </select>
+        </label>
+        <input type="submit" value="SUBMIT">
+    </form>
     {{
         render(controller(
             'App\\Controller\\TagClaudController::tagClaud'
